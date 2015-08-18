@@ -1,0 +1,27 @@
+{
+  "name": "hubot-direct",
+  "version": "0.1.0",
+  "description": "Direct adapter for GitHub's Hubot",
+  "main": "./src/direct",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lisb/hubot-direct.git"
+  },
+  "keywords": [
+    "lisb",
+    "direct",
+    "daab"
+  ],
+  "author": "L is B corp.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lisb/hubot-direct/issues"
+  },
+  "homepage": "https://github.com/lisb/hubot-direct",
+  "dependencies": {
+    "direct-js": "0.1.0"
+  }
+}

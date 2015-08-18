@@ -5,13 +5,11 @@ accessToken = process.env.HUBOT_DIRECT_TOKEN
 proxyURL = process.env.HUBOT_DIRECT_PROXY_URL or process.env.HTTPS_PROXY or process.env.HTTP_PROXY
 
 # Hubot dependencies
-Robot                                                = require '../robot'
-Adapter                                              = require '../adapter'
-{TextMessage,EnterMessage,LeaveMessage,JoinMessage,TopicMessage} = require '../message'
+{Robot,Adapter,TextMessage,EnterMessage,LeaveMessage,JoinMessage,TopicMessage} = require('hubot')
 
 # dependencies
 EventEmitter = require('events').EventEmitter
-DirectAPI    = require('./direct-api').DirectAPI
+DirectAPI    = require('direct-js').DirectAPI
 url          = require('url')
 
 class Direct extends Adapter

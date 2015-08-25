@@ -99,6 +99,7 @@ class Direct extends Adapter
    bot.listen()
 
    @bot = bot
+   @robot.direct = bot
 
 exports.use = (robot) ->
   new Direct robot

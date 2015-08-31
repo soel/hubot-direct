@@ -5,7 +5,11 @@ accessToken = process.env.HUBOT_DIRECT_TOKEN
 proxyURL = process.env.HUBOT_DIRECT_PROXY_URL or process.env.HTTPS_PROXY or process.env.HTTP_PROXY
 
 # Hubot dependencies
-{Robot,Adapter,TextMessage,EnterMessage,LeaveMessage,JoinMessage,TopicMessage} = require('hubot')
+try
+  hubot = require 'lisb-hubot'
+catch
+  hubot = require 'hubot'
+{Robot,Adapter,TextMessage,EnterMessage,LeaveMessage,JoinMessage,TopicMessage} = hubot
 
 # dependencies
 EventEmitter = require('events').EventEmitter
